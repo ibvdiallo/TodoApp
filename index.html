@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoApp</title>
+    <script src="script.js" defer></script>
+    <script src="tache.js" defer></script>
+    <script src="update.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="d-flex container-fluid justify-content-end">
+        <div id="side_bar" class="col-2 bg-primary">
+
+        </div>
+
+        <div id="content" class="col-10 card">
+            <div class="card-header d-flex justify-content-between">
+                <div class="d-flex">
+                    <button id="menu" class="btn btn-primary btn-sm mx-2">Fermer</button>
+                    <h3 class="mx-2">Todo list</h3>
+                </div>
+
+                <div class="d-flex gap-2">
+                    <input class="form-control" id="tache" type="text" placeholder="Nouvelle tache" >
+                    <button id="btn_ajouter" class="btn btn-primary">Ajouter</button>
+                </div>
+            </div>
+
+            <div class="card-body bg-info">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nom</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="liste_taches">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
